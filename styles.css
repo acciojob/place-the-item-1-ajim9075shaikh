@@ -1,2 +1,18 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis with equal space between them */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if necessary */
+}
+
+.item {
+    flex-grow: 0; /* Prevent items from growing to fill available space */
+    flex-shrink: 0; /* Prevent items from shrinking to fit */
+    width: calc(33.33% - 20px); /* Set width to one-third of the container width minus spacing */
+    margin-bottom: 20px; /* Add bottom margin to create space between rows */
+}
+
+.item:nth-child(3n) {
+    margin-right: 0; /* Remove right margin for every third item to prevent wrapping issues */
+}
