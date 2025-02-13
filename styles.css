@@ -16,3 +16,6 @@
 .item:nth-child(3n) {
     margin-right: 0; /* Remove right margin for every third item to prevent wrapping issues */
 }
+item {
+    width: 100px;
+}
